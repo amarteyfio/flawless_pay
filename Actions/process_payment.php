@@ -28,7 +28,7 @@ curl_setopt($ch,CURLOPT_URL, $url);
 curl_setopt($ch,CURLOPT_POST, true);
 curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-  "Authorization: Bearer sk_test_2b5213ed93674853627d00c1c7f44f22daec14c1",
+  "Authorization: Bearer sk_live_497a3a223893acf3ff8ecfd4dce1158b2fc9b088",
   "Cache-Control: no-cache",
 ));
 
