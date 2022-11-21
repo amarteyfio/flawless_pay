@@ -35,7 +35,7 @@ if(isset($_POST['login'])){
         }
         
         if($_SESSION["role"] == 3){
-            header("Location: ../View/index.php");
+            header("Location: ../view/index.php");
         }
         elseif($_SESSION["role"] == 2){
             $_SESSION['hid'] = $e_check['hostel_id'];
