@@ -1,7 +1,7 @@
 <?php
     include_once("../Settings/core.php");
     include_once("../../Controller/infrastructure_controller.php");
-    include_once("../Controller/user_controller.php");
+    include_once("../Controller/general_controller.php");
 
     // Check if the user is logged in, if not then redirect him to login page
     //if logged in check if admin, if not redirect to login page 
@@ -221,7 +221,7 @@
           <tbody>
 
             <?php
-                $selectall= selectAllHostels_ctr();
+                $selectall= select_all_ctr("hostels");
                 
                 foreach ($selectall as $row) 
                 :
@@ -257,9 +257,9 @@
           <tbody>
 
             <?php
-                $selectall= selectAllRooms_ctr();
+                $selectal= select_all_ctr("rooms");
                 
-                foreach ($selectall as $row) 
+                foreach ($selectal as $row) 
                 :
                 
             ?>
