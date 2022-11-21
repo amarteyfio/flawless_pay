@@ -1,6 +1,7 @@
 <?php
     include("../Settings/core.php");
     include("../Controller/infrastructure_controller.php");
+    include("../Controller/hostel_controller.php");
 
     // Check if the user is logged in, if not then redirect him to login page
     //if logged in check if admin, if not redirect to login page 
@@ -10,7 +11,7 @@
         if($_SESSION["role"] == 2){ 
             //echo "Hello admin";
             $hostel_id=$_SESSION['hid'];
-            $selectHostelRooms= selectHostelRooms_ctr($hostel_id);
+            $selectHostelRooms= select_hostel_ctr($hostel_id);
         }
 
         else{ 
@@ -129,12 +130,6 @@
               Rooms
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="occupants.php">
-              <span data-feather="shopping-cart" class="align-text-bottom"></span>
-              Occupants
-            </a>
-          </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="users" class="align-text-bottom"></span>
@@ -193,7 +188,7 @@
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2"><?php 
-            $selectAHostel= selectAHostel_ctr($hostel_id);
+            $selectAHostel= select_hostel_ctr($hostel_id);
             echo $selectAHostel["hostel_name"];?></h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
@@ -245,29 +240,6 @@
           </tbody>
       </table>
 
-      <h2>Occupants</h2>
-      <div class="table-responsive">
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1,001</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-              <td>text</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </main>
   </div>
 </div>
