@@ -24,7 +24,7 @@ $check = host_selname_ctr($name);
 if(empty($check)){
     //add hostel exists
     if(add_hostel_ctr($name) != NULL){
-    echo '<script>alertRedirect_admin("Record Added","hostels.php")</script>';
+        header("../Admin/");
     }
 }
 else{
