@@ -2,6 +2,7 @@
     include_once("../Settings/core.php");
     include_once("../../Controller/infrastructure_controller.php");
     include_once("../Controller/general_controller.php");
+    include_once("../Controller/hostel_controller.php");
 
     // Check if the user is logged in, if not then redirect him to login page
     //if logged in check if admin, if not redirect to login page 
@@ -268,7 +269,7 @@
                 <td>
                     <?php 
                     $hid=$row['hostel_id'];
-                    $selecthostel= selectAHostel_ctr($hid);
+                    $selecthostel= select_hostel_ctr($hid);
                     echo $selecthostel['hostel_name']; 
                     
                     ?>

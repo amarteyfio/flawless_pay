@@ -1,6 +1,7 @@
 <?php
     include("../Settings/core.php");
     include("../Controller/infrastructure_controller.php");
+    include("../Controller/general_controller.php");
 
     // Check if the user is logged in, if not then redirect him to login page
     //if logged in check if admin, if not redirect to login page 
@@ -238,7 +239,7 @@
           <tbody>
 
             <?php
-                $selectall= selectAllHostels_ctr();
+                $selectall= select_all_ctr("hostels");
                 
                 foreach ($selectall as $row) 
                 :
