@@ -91,10 +91,10 @@ if(isset($_SESSION['loggedin'])){
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-					<h1 id="fh5co-logo"><a href="../index.php">Flawless Pay</a></h1>
+					<h1 id="fh5co-logo"><a href="https://flawless-payapp.herokuapp.com/">Flawless Pay</a></h1>
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li><a href="../index.php">Home</a></li>
+							<li><a href="https://flawless-payapp.herokuapp.com/">Home</a></li>
 							<li>
 								<a href="#" class="fh5co-sub-ddown">Hostels</a>
 								<ul class="fh5co-sub-menu">

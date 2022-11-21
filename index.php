@@ -6,7 +6,7 @@ session_start();
 
 //if user is already logged in
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: View/index.php");
+    header("location: view/index.php");
     exit;
 }
 
