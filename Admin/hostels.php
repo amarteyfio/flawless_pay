@@ -138,24 +138,6 @@
               Rooms
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="users.php">
-              <span data-feather="users" class="align-text-bottom"></span>
-              Users
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="orders.php">
-              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-              Orders
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="payment.php">
-              <span data-feather="layers" class="align-text-bottom"></span>
-              Payment
-            </a>
-          </li>
         </ul>
 
         <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">

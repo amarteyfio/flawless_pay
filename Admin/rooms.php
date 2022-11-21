@@ -133,18 +133,6 @@ $rooms = select_all_ctr("rooms");
               Rooms
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="users.php">
-              <span data-feather="users" class="align-text-bottom"></span>
-              Users
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="orders.php">
-              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-              Orders
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
