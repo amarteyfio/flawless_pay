@@ -1,6 +1,6 @@
 <?php
     include_once("../Settings/core.php");
-    include_once("../Controller/infrastructure_controller.php");
+    include_once("../../Controller/infrastructure_controller.php");
     include_once("../Controller/user_controller.php");
 
     // Check if the user is logged in, if not then redirect him to login page
@@ -14,7 +14,7 @@
 
         else{ 
             echo "You are not ROOT.";
-            echo '<a href="l../login/login.php"">Login</a>';
+            echo '<a href="../login/login.php"">Login</a>';
         }
     }
 
@@ -109,7 +109,7 @@
   <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
   <div class="navbar-nav">
     <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="../login/logout.php">Sign out</a>
+      <a class="nav-link px-3" href="../Login/logout.php">Sign out</a>
     </div>
   </div>
 </header>

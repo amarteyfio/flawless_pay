@@ -33,12 +33,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         }
 
 
-        if(add_room_ctr($name,$hostel,$type,$gender,$price,$cap) != NULL){
+        add_room_ctr($name,$hostel,$type,$gender,$price,$cap);
                 header("Location: ../Admin/rooms.php");
-        }
-        else{
-                echo "not added.";
-        }
+        
  }
 
 

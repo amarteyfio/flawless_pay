@@ -15,7 +15,7 @@
 
         else{ 
             echo "You are not ADMIN.";
-            echo '<a href="l../login/login.php"">Login</a>';
+            echo '<a href="../login/login.php"">Login</a>';
         }
     }
 
