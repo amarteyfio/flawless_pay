@@ -59,4 +59,9 @@ function sel_order_ctr(){
 
     return $order_id -> sel_order();
 }
+
+function selroomwhr_ctr($hid){
+    $add = new room_class();
+    return $add->selroomwhr($hid);
+}
 ?>

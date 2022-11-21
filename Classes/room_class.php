@@ -83,6 +83,11 @@ class room_class extends db_connection{
         return $this -> db_fetch_one($sql);
     }
 
+    function selroomwhr($hid){
+        $sql = "SELECT * FROM rooms WHERE hostel_id = $hid";
+        $records = $this->db_fetch_all($sql);
+    }
+
     
 }
 ?>
