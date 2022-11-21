@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+$message = "<a href='../Login/login.php'>Log In</a>";
+
+if(isset($_SESSION['loggedin'])){
+	$message = "<a href='../Login/logout.php'>Log Out</a>";
+}
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -101,7 +111,7 @@
 							<li><a href="blog.php">Off Campus Blog</a></li>
 							<li><a href="contact.php">Contact</a></li>
 							<!-- <li><a href="">Bookings</a></li> -->
-							<li><a href="../Login/logout.php">Log Out</a></li>
+							<li><?php echo $message;?></li>
 						</ul>
 					</nav>
 				</div>
@@ -135,7 +145,7 @@
 						<li><i class="ti-map"></i>Charlotte Street, Suite 721 AU</li>
 						<li><i class="ti-mobile"></i>+ 233 244 419 419</li>
 						<li><i class="ti-envelope"></i><a href="#">flawlesspay@yoursite.com</a></li>
-						<li><i class="ti-home"></i><a href="#">www.flawlesspay.com</a></li>
+						<li><i class="ti-home"></i><a href="../index.php">www.flawlesspay.com</a></li>
 					</ul>
 				</div>
 				<div class="col-md-12">
